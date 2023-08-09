@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Inter light';
+    font-style: normal;
+    src: url("Inter-Light-BETA.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #595151;
+    background-image: url("focusmode30.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    position: left;
+    transform: translate(-38%, 70%);
+    font-family: 'Inter';
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    position: center;
+}
+
+h1:hover {
+    color: #443B3B;
+    transition: 0.5s ease;
+}
+
+b1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    row-gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle-timer {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#1A2458 3.5deg, #fff 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Updated */
+    transform: translate(20%, 50%); /* Added */
+    left: 50%; /* Added */
+}
+
+.circle-timer::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #141330;
+    left: 50%; /* Added */
+    transform: translateX(-50%); /* Added */
+}
+
+.progress-value {
+    font-family: 'Inter';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Updated */
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #7B8CE7
+}
+
+
+.random-quote {
+    font-family: 'Inter';
+    font-size: 30px;
+    width: 200px; /* Set the width to make it a perfect circle */
+    height: 200px; /* Set the height to match the width */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(300%, -115%);
+}
+
+
